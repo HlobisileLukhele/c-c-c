@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CustomerCareCentre — Navbar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+    
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+
+    <!-- Logo -->
+    <a href="#" class="logo" aria-label="CustomerCareCentre home">
+      <span class="logo-icon" aria-hidden="true"></span>
+      <span class="logo-text">
+        <span class="c1">Customer</span><span class="c2">Care</span><span class="c3">Centre</span>
+      </span>
+    </a>
+
+    <!-- Desktop nav links -->
+    <ul class="nav-links" role="list">
+          <li><a href="/Index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="/pages/about.html">About</a></li>
+      <li><a href="pages/services.html">Services</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Desktop CTA -->
+    <a href="#" class="btn-cta" aria-label="Get started with CustomerCareCentre">
+      Get Started
+    </a>
+
+    <!-- Mobile hamburger -->
+    <button
+      class="hamburger"
+      id="hamburger"
+      aria-label="Toggle mobile menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+  <!-- Mobile menu (rendered outside nav for stacking context) -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <ul role="list">
+      <li><a href="/Index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="/pages/about.html">About</a></li>
+      <li><a href="pages/services.html">Services</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-divider" aria-hidden="true"></div>
+    <a href="/pages/contact.html" class="btn-cta">Get Started</a>
+  </div>
+
+  <div class="demo-label" aria-hidden="true">Navbar Component</div>
+
+  <!--JAVASCRIPT -->
+  <script  href="./index.js"></script>
+</body>
+</html>
