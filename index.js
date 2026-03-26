@@ -1,5 +1,3 @@
-//About vision and mission cards animation
-
 (function () {
     const cards = document.querySelectorAll('.mv-card');
 
