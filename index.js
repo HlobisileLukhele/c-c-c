@@ -175,3 +175,33 @@
       };
       window.addEventListener('scroll', activateLink, { passive: true });
     }
+
+  // ── Scroll animation helper ──────────────────────────────────
+  function observe(selector, opts, stagger) {
+    const els = document.querySelectorAll(selector);
+    if (!els.length) return;
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const delay = stagger ? Array.from(els).indexOf(entry.target) * stagger : 0;
+        setTimeout(() => entry.target.classList.add('visible'), delay);
+        obs.unobserve(entry.target);
+      });
+    }, opts || { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(el => obs.observe(el));
+  }
+
+  // ── About page animations ────────────────────────────────────
+  observe('.about-text, .about-image', { threshold: 0.15, rootMargin: '0px 0px -60px 0px' }, 0);
+
+  // ── Contact page animations ──────────────────────────────────
+  observe('.contact-eyebrow, .contact-title, .contact-subtitle', { threshold: 0.2 }, 150);
+  observe('.cinfo-col, .cform-col', { threshold: 0.15, rootMargin: '0px 0px -60px 0px' }, 0);
+
+  // ── Services page animations ─────────────────────────────────
+  observe('.services-banner-eyebrow, .services-banner-title, .services-banner-subtitle', { threshold: 0.2 }, 150);
+  observe('.loyalty-text, .loyalty-image', { threshold: 0.15, rootMargin: '0px 0px -60px 0px' }, 0);
+  observe('.learn-image, .learn-text', { threshold: 0.15, rootMargin: '0px 0px -60px 0px' }, 0);
+  observe('.scorecard-eyebrow, .scorecard-title, .scorecard-subtitle', { threshold: 0.2 }, 150);
+  observe('.scorecard-card', { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }, 150);
+  observe('.build-title, .build-subtitle, .build-btn', { threshold: 0.2 }, 150);
