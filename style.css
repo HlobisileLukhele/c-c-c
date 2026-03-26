@@ -2614,7 +2614,7 @@
     }
 
     .logo-img {
-      height: 42px;
+      height: 79px;
       width: auto;
       display: block;
     }
@@ -3314,7 +3314,7 @@
 .footer-brand {}
 
 .footer-logo-img {
-  height: 38px;
+  height: 73px;
   width: auto;
   display: block;
   margin-bottom: 14px;
@@ -3469,8 +3469,8 @@ img  { max-width: 100%; height: auto; }
 
 /* ── Navbar logo shrinks on mobile ───────────────────────── */
 @media (max-width: 480px) {
-  .logo-img        { height: 32px; }
-  .footer-logo-img { height: 28px; }
+  .logo-img        { height: 60px; }
+  .footer-logo-img { height: 54px; }
 }
 
 /* ── Hero ────────────────────────────────────────────────── */
