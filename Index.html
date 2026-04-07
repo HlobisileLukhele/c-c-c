@@ -3,848 +3,887 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Customer Care Centre — B-BBEE Learnerships &amp; Loyalty Programmes South Africa</title>
-  <meta name="description" content="Customer Care Centre helps South African businesses achieve B-BBEE excellence through accredited learnerships, skills development, and customer loyalty programmes. Level 1 B-BBEE contributor." />
+  <title>Customer Care Centre — Professional People Connection | c-c-c.co.za</title>
+  <meta name="description" content="Customer Care Centre: More than a decade of professional people connection. B-BBEE learnerships, call centre solutions, and job opportunity enhancement across South Africa." />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#090e1a" />
+  <meta name="theme-color" content="#1A2B5E" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Customer Care Centre — B-BBEE Learnerships &amp; Loyalty Programmes" />
-  <meta property="og:description" content="Empowering South African businesses through impactful loyalty programmes and accredited learnerships for B-BBEE excellence." />
+  <meta property="og:title" content="Customer Care Centre — Professional People Connection" />
+  <meta property="og:description" content="Bridging the gap between talent and opportunity across South Africa." />
   <meta property="og:url" content="https://c-c-c.co.za/" />
-  <meta property="og:image" content="https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-21-scaled.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href="https://c-c-c.co.za/" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Sora:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:          '#1A2B5E',
+            'blue-action': '#1B3F9E',
+            'blue-light':  '#4A90D9',
+            'blue-soft':   '#F0F6FF',
+            muted:         '#6B7A9A',
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body:    ['Inter',   'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom Overrides -->
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+<body class="bg-white text-gray-800">
 
-  <!-- ── NAVBAR ──────────────────────────────────────────────── -->
-  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
-    <a href="index.html" class="logo" aria-label="CustomerCareCentre home">
-      <img src="Assets/Customer-care-center-logo.png" alt="Customer Care Centre" class="logo-img" />
-    </a>
-    <ul class="nav-links" role="list">
-      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-      <li><a href="pages/about.html">About</a></li>
-      <li><a href="pages/services.html">Services</a></li>
-      <li><a href="pages/contact.html">Contact</a></li>
-    </ul>
-    <a href="pages/contact.html" class="btn-cta" aria-label="Get started with CustomerCareCentre">Get Started</a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
-    <ul role="list">
-      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-      <li><a href="pages/about.html">About</a></li>
-      <li><a href="pages/services.html">Services</a></li>
-      <li><a href="pages/contact.html">Contact</a></li>
-    </ul>
-    <div class="mobile-divider" aria-hidden="true"></div>
-    <a href="pages/contact.html" class="btn-cta">Get Started</a>
-  </div>
+  <!-- Skip to content -->
+  <a href="#home"
+     class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-[#1A2B5E] focus:text-white focus:px-4 focus:py-2 focus:rounded-lg text-sm">
+    Skip to main content
+  </a>
 
-<main id="main-content">
-<section class="hero">
-  <!-- ── BACKGROUND ── -->
-  <div class="hero-bg"></div>
+  <!-- ═══════════════════════════════════════════════════════
+       NAVBAR (Sticky)
+  ═══════════════════════════════════════════════════════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+       role="navigation" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-  <!-- ── MAIN CONTENT ── -->
-  <div class="hero-content">
-
-    <p class="hero-eyebrow">More than a decade of professional people connection</p>
-
-    <h1 class="hero-heading">
-      Professional People,<br>
-      <span class="accent">Our Offerings.</span>
-    </h1>
-
-    <p class="hero-para">
-      Transforming previously disadvantaged South African youth. Fulfilling our
-      partners' B-BBEE requirements. Creating lasting legacy together.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="pages/services.html" class="btn btn-primary">
-        Explore Our Services <span class="arrow">→</span>
+      <!-- Logo -->
+      <a href="#home" class="flex items-center shrink-0" aria-label="Customer Care Centre home">
+        <img
+          src="./Assets/Customer-care-center-logo.png"
+          alt="Customer Care Centre"
+          class="h-[4.25rem] w-auto"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <span class="logo-fallback hidden items-center justify-center w-12 h-12 rounded-lg text-white text-sm font-bold"
+              style="background:linear-gradient(135deg,#1A2B5E,#4A90D9)">CCC</span>
       </a>
-      <a href="pages/contact.html" class="btn btn-outline">
+
+      <!-- Desktop Links -->
+      <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0" role="list">
+        <li><a href="#home"     class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#team"     class="nav-link">Team</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <a href="#contact" class="hidden md:inline-flex cta-btn text-sm px-5 py-2.5">
         Get In Touch
       </a>
+
+      <!-- Hamburger (Mobile) -->
+      <button
+        id="hamburger"
+        class="md:hidden flex flex-col gap-[6px] p-2 -mr-2"
+        aria-label="Toggle mobile menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
     </div>
+  </nav>
 
-  </div>
-
-  <!-- ── STAT CARDS ── -->
-  <div class="hero-cards">
-
-    <div class="stat-card">
-      <div class="stat-icon">
-        <!-- People / learners icon -->
-        <svg viewBox="0 0 24 24">
-          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-          <circle cx="9" cy="7" r="4"/>
-          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-        </svg>
-      </div>
-      <div class="stat-text">
-        <div class="stat-number">500+</div>
-        <div class="stat-label">Learners Placed</div>
-      </div>
-    </div>
-
-    <div class="stat-card">
-      <div class="stat-icon">
-        <!-- Badge / level icon -->
-        <svg viewBox="0 0 24 24">
-          <circle cx="12" cy="8" r="6"/>
-          <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
-        </svg>
-      </div>
-      <div class="stat-text">
-        <div class="stat-number">Level 1</div>
-        <div class="stat-label">B-BBEE<br>Contributors</div>
-      </div>
-    </div>
-
-    <div class="stat-card">
-      <div class="stat-icon">
-        <!-- Trending up icon -->
-        <svg viewBox="0 0 24 24">
-          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
-          <polyline points="17 6 23 6 23 12"/>
-        </svg>
-      </div>
-      <div class="stat-text">
-        <div class="stat-number">&gt;90%</div>
-        <div class="stat-label">Completion Rate</div>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- What We Offer -->
-<section class="wwo-section">
-
-  <div class="wwo-intro">
-    <p class="wwo-eyebrow">What We Offer</p>
-    <h2 class="wwo-heading">
-      Professional People,<br>
-      <span class="wwo-accent">Our Offerings.</span>
-    </h2>
-    <p class="wwo-para">
-      Transforming previously disadvantaged South African youth. Fulfilling our
-      partners' B-BBEE requirements. Creating lasting legacy together.
-    </p>
-  </div>
-
-  <div class="wwo-cards">
-
-    <div class="wwo-card">
-      <div class="wwo-card-num">1</div>
-      <div class="wwo-card-title">Call Centres</div>
-      <div class="wwo-card-desc">A dedicated professional people connection solution with our specialised in-bound call centre.</div>
-    </div>
-
-    <div class="wwo-card">
-      <div class="wwo-card-num">2</div>
-      <div class="wwo-card-title">Learnership Training and Youth Entrepreneurial Development</div>
-      <div class="wwo-card-desc">Year-round learnership qualification options with practical experience.</div>
-    </div>
-
-    <div class="wwo-card">
-      <div class="wwo-card-num">3</div>
-      <div class="wwo-card-title">Job Opportunity Enhancement Training</div>
-      <div class="wwo-card-desc">Comprehensive and relevant career enhancement training within the retail sector.</div>
-    </div>
-
-  </div>
-</section>
-<!-- Customer Care Loyalty Programmes -->
-<section class="loyalty-section">
-<div class="loyalty-inner">
-  <!-- ── LEFT: TEXT ── -->
-  <div class="loyalty-text">
-
-    <div class="loyalty-badge">
-      <svg viewBox="0 0 24 24">
-        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-      </svg>
-      Loyalty Programmes
-    </div>
-
-    <h2 class="loyalty-heading">Customer Care Loyalty Programmes</h2>
-
-    <p class="loyalty-para">
-      We design and manage bespoke loyalty programmes that strengthen customer relationships, boost retention, and create lasting brand advocates. Our data-driven approach ensures every rand spent delivers measurable returns.
-    </p>
-
-    <!-- 2x2 feature grid -->
-    <div class="loyalty-features">
-
-      <div class="loyalty-feature">
-        <div class="loyalty-feature-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
-            <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
-          </svg>
-        </div>
-        <div>
-          <p class="loyalty-feature-title">Programme Design</p>
-          <p class="loyalty-feature-desc">Custom-built loyalty programmes aligned to your brand and customer base.</p>
-        </div>
-      </div>
-
-      <div class="loyalty-feature">
-        <div class="loyalty-feature-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-          </svg>
-        </div>
-        <div>
-          <p class="loyalty-feature-title">Customer Engagement</p>
-          <p class="loyalty-feature-desc">Multi-channel strategies that keep customers engaged and coming back.</p>
-        </div>
-      </div>
-
-      <div class="loyalty-feature">
-        <div class="loyalty-feature-icon">
-          <svg viewBox="0 0 24 24">
-            <line x1="18" y1="20" x2="18" y2="10"/>
-            <line x1="12" y1="20" x2="12" y2="4"/>
-            <line x1="6"  y1="20" x2="6"  y2="14"/>
-            <polyline points="2 20 22 20"/>
-          </svg>
-        </div>
-        <div>
-          <p class="loyalty-feature-title">Analytics & Reporting</p>
-          <p class="loyalty-feature-desc">Real-time dashboards and insights to measure programme performance.</p>
-        </div>
-      </div>
-
-      <div class="loyalty-feature">
-        <div class="loyalty-feature-icon">
-          <svg viewBox="0 0 24 24">
-            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
-            <polyline points="17 6 23 6 23 12"/>
-          </svg>
-        </div>
-        <div>
-          <p class="loyalty-feature-title">Retention Strategy</p>
-          <p class="loyalty-feature-desc">Proven frameworks that increase lifetime customer value.</p>
-        </div>
-      </div>
-
+  <!-- Mobile Menu Overlay -->
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 z-40 flex flex-col items-center justify-center mobile-overlay"
+    role="dialog"
+    aria-label="Mobile navigation"
+    aria-hidden="true"
+  >
+    <ul class="flex flex-col items-center gap-8 list-none p-0 m-0 text-center" role="list">
+      <li><a href="#home"     class="mobile-nav-link text-2xl">Home</a></li>
+      <li><a href="#about"    class="mobile-nav-link text-2xl">About</a></li>
+      <li><a href="#services" class="mobile-nav-link text-2xl">Services</a></li>
+      <li><a href="#team"     class="mobile-nav-link text-2xl">Team</a></li>
+      <li><a href="#contact"  class="mobile-nav-link text-2xl">Contact</a></li>
+    </ul>
+    <div class="mt-10">
+      <a href="#contact" class="mobile-nav-link cta-btn text-base px-8 py-3">Get In Touch</a>
     </div>
   </div>
 
-  <!-- ── RIGHT: IMAGE ── -->
-  <div class="loyalty-image">
-    <img src="https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-21-scaled.jpg" alt="Customer care team at work" loading="lazy" />
-  </div>
 
-</div>
-</section>
+  <!-- ═══════════════════════════════════════════════════════
+       HERO (#home)
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="home" class="relative min-h-screen flex flex-col justify-center overflow-hidden hero-bg-img">
 
-<!-- B-BBEE Learnerships -->
-<section class="learn-section">
-<div class="learn-inner">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 hero-overlay" aria-hidden="true"></div>
 
-  <!-- ── LEFT: IMAGE ── -->
-  <div class="learn-image">
-    <!-- ↓↓ REPLACE with your WordPress media URL ↓↓ -->
-    <img src="https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-45-scaled.jpg" alt="Learners in a training session" loading="lazy" />
-  </div>
-
-  <!-- ── RIGHT: TEXT ── -->
-  <div class="learn-text">
-
-    <div class="learn-badge">
-      <svg viewBox="0 0 24 24">
-        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-      </svg>
-      Learnerships
-    </div>
-
-    <h2 class="learn-heading">B-BBEE Learnerships</h2>
-
-    <p class="learn-para">
-      Our SETA-accredited learnership programmes are designed to develop real skills while maximising your B-BBEE scorecard. We handle everything from learner recruitment to certification, ensuring compliance and genuine impact.
-    </p>
-
-    <!-- 2x2 feature grid -->
-    <div class="learn-features">
-
-      <div class="learn-feature">
-        <div class="learn-feature-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-          </svg>
-        </div>
-        <div>
-          <p class="learn-feature-title">Accredited Qualifications</p>
-          <p class="learn-feature-desc">NQF-aligned, SETA-accredited programmes across multiple sectors.</p>
-        </div>
-      </div>
-
-      <div class="learn-feature">
-        <div class="learn-feature-icon">
-          <svg viewBox="0 0 24 24">
-            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-          </svg>
-        </div>
-        <div>
-          <p class="learn-feature-title">Workplace Readiness</p>
-          <p class="learn-feature-desc">Practical skills training that prepares learners for real-world roles.</p>
-        </div>
-      </div>
-
-      <div class="learn-feature">
-        <div class="learn-feature-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-            <polyline points="10 9 9 9 8 9"/>
-          </svg>
-        </div>
-        <div>
-          <p class="learn-feature-title">Compliance Management</p>
-          <p class="learn-feature-desc">Full documentation and verification for B-BBEE audits.</p>
-        </div>
-      </div>
-
-      <div class="learn-feature">
-        <div class="learn-feature-icon">
-          <svg viewBox="0 0 24 24">
-            <circle cx="12" cy="8" r="6"/>
-            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
-          </svg>
-        </div>
-        <div>
-          <p class="learn-feature-title">Scorecard Impact</p>
-          <p class="learn-feature-desc">Maximise points across Skills Development and SED pillars.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- Quote Section -->
-<section class="quote-section">
-
-  <!-- ── BACKGROUND GRID OF EMPLOYEE PHOTOS ── -->
-  <!-- Replace each src with your WordPress media URLs -->
-  <div class="quote-bg-grid">
-    <div class="grid-cell">
-<img src="https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-21-300x200.jpg" alt="" />
-</div>
-    <div class="grid-cell">
-<img src="https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-48-scaled.jpg" alt="" />
-</div>
-    <div class="grid-cell">
-<img src="https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-45-300x200.jpg" alt="" />
-</div>
-    <div class="grid-cell">
-<img src="https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-47-scaled.jpg" alt="" /></div>
-    <div class="grid-cell">
-<img src="https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-44-scaled.jpg" alt="" /></div>
-    <div class="grid-cell">
-<img src=https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-20-scaled.jpg" alt="" /></div>
-    <div class="grid-cell">
-<img src=https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-45-300x200.jpg" alt="" /></div>
-    <div class="grid-cell">
-<img src="https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-45-300x200.jpg" alt="" /></div>
-  </div>
-
-  <!-- ── BLUE OVERLAY ── -->
-  <div class="quote-overlay"></div>
-
-  <!-- ── QUOTE ── -->
-  <div class="quote-content">
-    <span class="quote-mark">"</span>
-    <p class="quote-text">
-      Not only can you help develop the skills of people who generally struggle to find stable jobs, but you can make a significant contribution to your bottom line and the country's overall well-being.
-    </p>
-    <p class="quote-attribution">— Neil Wilson, CEO</p>
-  </div>
-</section>
-
-<!-- Why Choose Us?-->
-<section class="why-section">
-<div class="why-inner">
-
-  <!-- ── HEADER ── -->
-  <div class="why-header">
-    <p class="why-eyebrow">Why Us</p>
-    <h2 class="why-title">Your Trusted <span class="accent">Transformation</span> Partner</h2>
-    <p class="why-subtitle">We don't just tick boxes — we create sustainable value for your business and the communities you impact.</p>
-  </div>
-
-  <!-- ── 6 CARDS ── -->
-  <div class="why-grid">
-
-    <!-- 1 -->
-    <div class="why-card">
-      <div class="why-icon">
-        <svg viewBox="0 0 24 24">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        </svg>
-      </div>
-      <h3 class="why-card-title">SETA Accredited</h3>
-      <p class="why-card-desc">Our learnership programmes are fully accredited, ensuring compliance and quality outcomes.</p>
-    </div>
-
-    <!-- 2 -->
-    <div class="why-card">
-      <div class="why-icon">
-        <svg viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="10"/>
-          <circle cx="12" cy="12" r="4"/>
-          <line x1="12" y1="2" x2="12" y2="4"/>
-          <line x1="12" y1="20" x2="12" y2="22"/>
-          <line x1="2" y1="12" x2="4" y2="12"/>
-          <line x1="20" y1="12" x2="22" y2="12"/>
-        </svg>
-      </div>
-      <h3 class="why-card-title">Scorecard Focused</h3>
-      <p class="why-card-desc">Every solution is designed to maximise your B-BBEE scorecard across multiple elements.</p>
-    </div>
-
-    <!-- 3 -->
-    <div class="why-card">
-      <div class="why-icon">
-        <svg viewBox="0 0 24 24">
-          <line x1="18" y1="20" x2="18" y2="10"/>
-          <line x1="12" y1="20" x2="12" y2="4"/>
-          <line x1="6"  y1="20" x2="6"  y2="14"/>
-          <polyline points="2 20 22 20"/>
-        </svg>
-      </div>
-      <h3 class="why-card-title">Measurable Results</h3>
-      <p class="why-card-desc">Data-driven approach with transparent reporting on programme performance and ROI.</p>
-    </div>
-
-    <!-- 4 -->
-    <div class="why-card">
-      <div class="why-icon">
-        <svg viewBox="0 0 24 24">
-          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-        </svg>
-      </div>
-      <h3 class="why-card-title">End-to-End Service</h3>
-      <p class="why-card-desc">From strategy to execution, we manage every detail so you can focus on your core business.</p>
-    </div>
-
-    <!-- 5 -->
-    <div class="why-card">
-      <div class="why-icon">
-        <svg viewBox="0 0 24 24">
-          <line x1="12" y1="2" x2="12" y2="6"/>
-          <line x1="12" y1="18" x2="12" y2="22"/>
-          <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/>
-          <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/>
-          <line x1="2" y1="12" x2="6" y2="12"/>
-          <line x1="18" y1="12" x2="22" y2="12"/>
-          <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/>
-          <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/>
-        </svg>
-      </div>
-      <h3 class="why-card-title">Custom Solutions</h3>
-      <p class="why-card-desc">No cookie-cutter approach — every programme is tailored to your unique business needs.</p>
-    </div>
-
-    <!-- 6 -->
-    <div class="why-card">
-      <div class="why-icon">
-        <svg viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="10"/>
-          <polyline points="12 6 12 12 16 14"/>
-        </svg>
-      </div>
-      <h3 class="why-card-title">Proven Track Record</h3>
-      <p class="why-card-desc">Over a decade of experience delivering successful programmes across multiple industries.</p>
-    </div>
-  </div>
-
-</div>
-</section>
-
-
-
-<!-- Stewards Section -->
-<section class="stewards-section">
-
-  <!-- ── BACKGROUND: CEO photo left, Operations Director photo right ── -->
-  <div class="stewards-bg">
-    <div class="bg-photo">
-      <!-- ↓↓ REPLACE with CEO photo URL ↓↓ -->
-      <img src=https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-47-scaled.jpg" alt="Neil - CEO" />
-    </div>
-    <div class="bg-photo">
-      <!-- ↓↓ REPLACE with Operations Director photo URL ↓↓ -->
-      <img src="https://c-c-c.co.za/wp-content/uploads/2026/02/CCC-BW-47-scaled.jpg" alt="Brandon - Operations Director" />
-    </div>
-  </div>
-
-  <!-- ── OVERLAY ── -->
-  <div class="stewards-overlay"></div>
-
-  <!-- ── CONTENT ── -->
-  <div class="stewards-content">
-
-    <!-- Left: quotes -->
-    <div class="stewards-left">
-      <p class="stewards-eyebrow">Meet the Stewards</p>
-      <p class="stewards-quote-main">
-        "What is important here is not trying to score points for the sake of the B-BBEE scorecard."
+    <!-- Centered copy -->
+    <div class="relative max-w-3xl mx-auto px-6 pt-28 pb-12 text-center w-full">
+      <h1 class="fade-in-up font-heading font-bold text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.12] mb-6 text-white"
+          style="animation-delay:0s">
+        Professional People Connection in the Customer Care Industry.
+      </h1>
+      <p class="fade-in-up text-lg leading-relaxed mb-10 font-light"
+         style="color:rgba(255,255,255,0.72); animation-delay:0.2s">
+        More than a decade of professional people connection. We bridge the gap between
+        talent and opportunity across South Africa.
       </p>
-      <p class="stewards-quote-sub">
-        "Not only can you help develop the skills of people who generally struggle to find stable jobs, but you can make a significant contribution to your bottom line and the country's overall well-being."
-      </p>
+      <div class="fade-in-up flex flex-wrap justify-center gap-4" style="animation-delay:0.3s">
+        <a href="#services" class="cta-btn text-sm font-medium px-8 py-3.5">
+          Our Services <span aria-hidden="true">→</span>
+        </a>
+        <a href="#contact"
+           class="inline-flex items-center gap-2 border-2 border-white text-white font-medium text-sm px-8 py-3.5 rounded-lg transition-all duration-200 hover:bg-white hover:text-[#1A2B5E]">
+          Contact Us
+        </a>
+      </div>
     </div>
 
-    <!-- Right: contact cards -->
-    <div class="stewards-right">
+  </section>
 
-      <!-- Neil -->
-      <div class="steward-card">
-        <p class="steward-name">Neil</p>
-        <p class="steward-role">CEO</p>
-        <div class="steward-contacts">
-          <a href="tel:0836334547" class="steward-contact-row">
-            <svg viewBox="0 0 24 24">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 5.76 5.76l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ABOUT (#about)
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="about" class="py-24" style="background:#F0F6FF">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <p class="scroll-reveal text-xs font-medium tracking-[0.18em] uppercase mb-3" style="color:#4A90D9">Who We Are</p>
+        <h2 class="scroll-reveal font-heading font-bold text-3xl md:text-4xl" style="color:#1A2B5E; transition-delay:0.08s">
+          Your Trusted B-BBEE Partner
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+
+        <!-- Image -->
+        <div class="relative scroll-reveal">
+          <img
+            src="./images/CCC-BW-45.jpg"
+            alt="CCC team members working together"
+            class="rounded-2xl w-full h-80 object-cover shadow-xl"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hidden rounded-2xl w-full h-80 items-center justify-center"
+               style="background:linear-gradient(135deg,#1B3F9E 0%,#4A90D9 100%)">
+            <span class="text-6xl font-heading font-bold text-white opacity-[0.12] select-none">CCC</span>
+          </div>
+          <div class="absolute -bottom-5 -right-5 bg-white rounded-xl px-5 py-4 shadow-xl text-center">
+            <div class="font-heading font-bold text-xl" style="color:#1B3F9E">Level 1</div>
+            <div class="text-xs mt-0.5" style="color:#6B7A9A">B-BBEE Contributor</div>
+          </div>
+        </div>
+
+        <!-- Story -->
+        <div class="scroll-reveal" style="transition-delay:0.1s">
+          <h3 class="font-heading font-semibold text-2xl mb-5" style="color:#1A2B5E">
+            More than a decade of professional people connection in the customer care industry.
+          </h3>
+
+          <!-- Intro -->
+          <p class="text-base leading-relaxed mb-6 font-light" style="color:#6B7A9A">
+            At Customer Care Centre, our main focus is to provide excellent call center services and training programs.
+            We specialize in customer care, loyalty, and retail training, and we have developed strong relationships
+            with respected companies like Mr Price Foundation, Red Alert, and Toyota.
+            Our goal is to deliver top-quality services and training solutions, driven by our commitment to excellence
+            and our passion for empowering individuals.
+          </p>
+
+          <!-- To Learners -->
+          <div class="mb-6">
+            <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#4A90D9">To Our Learners</p>
+            <p class="text-base leading-relaxed font-light" style="color:#6B7A9A">
+              We offer more than excellent learning and work experience for each individual. We
+              create, grow and sustain genuine career opportunities for them to build generational legacy.
+            </p>
+          </div>
+
+          <!-- To Partners -->
+          <div class="mb-6">
+            <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:#4A90D9">To Our Partners</p>
+            <p class="text-base leading-relaxed font-light" style="color:#6B7A9A">
+              We offer more than optimised B-BBEE points in skills development, enterprise
+              development and supplier development. We partner with you to equip South Africa
+              with appropriately skilled individuals who are instilled with purpose and confidence
+              for sustainable employment opportunities.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       VALUES
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-14">
+        <p class="scroll-reveal text-xs font-medium tracking-[0.18em] uppercase mb-3" style="color:#4A90D9">Our Culture</p>
+        <h2 class="scroll-reveal font-heading font-bold text-3xl md:text-4xl" style="color:#1A2B5E; transition-delay:0.08s">
+          We are all committed to being
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Loyal -->
+        <div class="value-card scroll-reveal rounded-2xl p-7 flex flex-col">
+          <div class="value-icon w-12 h-12 rounded-xl flex items-center justify-center mb-5 shrink-0" style="background:#F0F6FF">
+            <svg class="w-6 h-6" style="color:#1B3F9E" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
             </svg>
-            083 633 4547
-          </a>
-          <a href="mailto:Neil@c-c-c.co.za" class="steward-contact-row">
-            <svg viewBox="0 0 24 24">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
+          </div>
+          <h3 class="font-heading font-bold text-xl mb-3" style="color:#1A2B5E">Loyal</h3>
+          <p class="text-sm font-light leading-relaxed" style="color:#6B7A9A">
+            We care about each other and grow together by looking out for each other and our customers.
+          </p>
+        </div>
+
+        <!-- Excellent -->
+        <div class="value-card scroll-reveal rounded-2xl p-7 flex flex-col" style="transition-delay:0.08s">
+          <div class="value-icon w-12 h-12 rounded-xl flex items-center justify-center mb-5 shrink-0" style="background:#F0F6FF">
+            <svg class="w-6 h-6" style="color:#1B3F9E" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
             </svg>
-            Neil@c-c-c.co.za
-          </a>
+          </div>
+          <h3 class="font-heading font-bold text-xl mb-3" style="color:#1A2B5E">Excellent</h3>
+          <p class="text-sm font-light leading-relaxed" style="color:#6B7A9A">
+            We are committed to the standard of quality in the way we work.
+          </p>
+        </div>
+
+        <!-- Respectful -->
+        <div class="value-card scroll-reveal rounded-2xl p-7 flex flex-col" style="transition-delay:0.16s">
+          <div class="value-icon w-12 h-12 rounded-xl flex items-center justify-center mb-5 shrink-0" style="background:#F0F6FF">
+            <svg class="w-6 h-6" style="color:#1B3F9E" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl mb-3" style="color:#1A2B5E">Respectful</h3>
+          <p class="text-sm font-light leading-relaxed" style="color:#6B7A9A">
+            We know what is right. We treat ourselves, each other and our customers with kindness and respect.
+          </p>
+        </div>
+
+        <!-- Resilient -->
+        <div class="value-card scroll-reveal rounded-2xl p-7 flex flex-col" style="transition-delay:0.24s">
+          <div class="value-icon w-12 h-12 rounded-xl flex items-center justify-center mb-5 shrink-0" style="background:#F0F6FF">
+            <svg class="w-6 h-6" style="color:#1B3F9E" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl mb-3" style="color:#1A2B5E">Stronger Together</h3>
+          <p class="text-sm font-light leading-relaxed" style="color:#6B7A9A">
+            Our superpower: we keep going together, even when it's tough.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       SERVICES (#services)
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="services" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-20">
+        <p class="scroll-reveal text-xs font-medium tracking-[0.18em] uppercase mb-3" style="color:#4A90D9">What We Do</p>
+        <h2 class="scroll-reveal font-heading font-bold text-3xl md:text-4xl mb-4" style="color:#1A2B5E; transition-delay:0.08s">
+          Three Core Service Offerings
+        </h2>
+        <p class="scroll-reveal text-lg font-light max-w-2xl mx-auto" style="color:#6B7A9A; transition-delay:0.16s">
+          Each service creates sustainable employment pathways while delivering measurable B-BBEE scorecard impact.
+        </p>
+      </div>
+
+      <!-- Service 01: Call Centre -->
+      <div id="service-call-centre" class="grid md:grid-cols-2 gap-12 items-center mb-24">
+        <div class="scroll-reveal">
+          <div class="service-number mb-2">01</div>
+          <h3 class="font-heading font-bold text-2xl md:text-3xl mb-4" style="color:#1A2B5E">Call Centre</h3>
+          <p class="text-base leading-relaxed mb-6 font-light" style="color:#6B7A9A">
+            We offer comprehensive call center services that include inbound customer care and loyalty programs.
+            Our team recognizes the significance of delivering exceptional customer support, and our well-trained
+            professionals are adept at addressing a wide range of customer requirements. With a proven history of
+            serving esteemed companies in the Loyalty industry, our aim is to go above and beyond expectations,
+            fostering enduring relationships along the way.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="partner-tag">Shell V+</span>
+            <span class="partner-tag">Sasol</span>
+            <span class="partner-tag">Mr Price</span>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 shrink-0" style="color:#4A90D9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-sm font-light" style="color:#6B7A9A">Inbound customer care &amp; query resolution</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 shrink-0" style="color:#4A90D9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-sm font-light" style="color:#6B7A9A">Loyalty programme management &amp; fulfilment</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 shrink-0" style="color:#4A90D9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-sm font-light" style="color:#6B7A9A">Exceptional support that fosters enduring client relationships</span>
+            </li>
+          </ul>
+        </div>
+        <div class="scroll-reveal" style="transition-delay:0.1s">
+          <img
+            src="./images/CCC-BW-21.jpg"
+            alt="Call centre agents at work"
+            class="rounded-2xl w-full h-72 object-cover shadow-xl"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hidden rounded-2xl w-full h-72 items-center justify-center"
+               style="background:linear-gradient(135deg,#1A2B5E 0%,#4A90D9 100%)">
+            <span class="text-5xl font-heading font-bold text-white opacity-[0.12] select-none">CC</span>
+          </div>
         </div>
       </div>
 
-      <!-- Brandon -->
-      <div class="steward-card">
-        <p class="steward-name">Brandon</p>
-        <p class="steward-role">Operations Director</p>
-        <div class="steward-contacts">
-          <a href="tel:0697896975" class="steward-contact-row">
-            <svg viewBox="0 0 24 24">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 5.76 5.76l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-            069 789 6975
-          </a>
-          <a href="mailto:Brandon@c-c-c.co.za" class="steward-contact-row">
-            <svg viewBox="0 0 24 24">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            Brandon@c-c-c.co.za
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- Testimonials -->
-<section class="testi-section">
-<div class="testi-inner">
-
-  <!-- ── HEADER ── -->
-  <div class="testi-header">
-    <p class="testi-eyebrow">Testimonials</p>
-    <h2 class="testi-title">What Our <span class="accent">Clients</span> Say</h2>
-  </div>
-
-  <!-- ── CARDS ── -->
-  <div class="testi-grid">
-
-    <!-- Card 1 -->
-    <div class="testi-card">
-      <div class="testi-quote-mark">&#8221;</div>
-      <div class="testi-stars">
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-      </div>
-      <p class="testi-text">"Their learnership programme helped us achieve Level 1 B-BBEE status while genuinely upskilling our workforce. The impact has been remarkable."</p>
-      <hr class="testi-divider" />
-      <p class="testi-author-name">Thandi Mkhize</p>
-      <p class="testi-author-role">HR Director, Nexus Retail Group</p>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="testi-card">
-      <div class="testi-quote-mark">&#8221;</div>
-      <div class="testi-stars">
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-      </div>
-      <p class="testi-text">"The loyalty programme they designed for us increased customer retention by 35% in the first year. Truly exceptional service and strategic thinking."</p>
-      <hr class="testi-divider" />
-      <p class="testi-author-name">David van der Merwe</p>
-      <p class="testi-author-role">CEO, Cape Leisure Holdings</p>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="testi-card">
-      <div class="testi-quote-mark">&#8221;</div>
-      <div class="testi-stars">
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-      </div>
-      <p class="testi-text">"Professional, thorough, and deeply knowledgeable about B-BBEE requirements. They made the entire process seamless from start to finish."</p>
-      <hr class="testi-divider" />
-      <p class="testi-author-name">Nomsa Dlamini</p>
-      <p class="testi-author-role">Transformation Manager, Highveld Manufacturing</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- Call to Action  -->
-<section class="cta-section">
-<div class="cta-inner">
-
-  <p class="cta-eyebrow">Get Started</p>
-
-  <h2 class="cta-title">
-    Ready to Transform Your <span class="accent">B-BBEE<br>Score?</span>
-  </h2>
-
-  <p class="cta-subtitle">
-    Let's discuss how our loyalty programmes and learnerships can drive real impact for your business and the communities you serve.
-  </p>
-
-  <div class="cta-buttons">
-
-    <a href="pages/contact.html" class="cta-btn cta-btn-primary">
-      Start a Conversation <span class="arrow">→</span>
-    </a>
-
-    <a href="pages/contact.html" class="cta-btn cta-btn-secondary">
-      <svg viewBox="0 0 24 24">
-        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 5.76 5.76l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-      </svg>
-      Contact Us
-    </a>
-
-  </div>
-
-</div>
-</section>
-
-  </main>
-
-  <!-- ── FOOTER ───────────────────────────────────────────────── -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-
-      <!-- Brand -->
-      <div class="footer-brand">
-        <img src="Assets/Customer-Care-Centre.png" alt="Customer Care Centre" class="footer-logo-img" />
-        <p class="footer-tagline">Empowering businesses through impactful loyalty programmes and accredited learnerships for B-BBEE excellence.</p>
-      </div>
-
-      <!-- Quick Links -->
-      <div>
-        <p class="footer-heading">Quick Links</p>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/about.html">About Us</a></li>
-          <li><a href="pages/services.html">Services</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Services -->
-      <div>
-        <p class="footer-heading">Services</p>
-        <ul class="footer-links">
-          <li><a href="pages/services.html">Loyalty Programmes</a></li>
-          <li><a href="pages/services.html">B-BBEE Learnerships</a></li>
-          <li><a href="pages/services.html">Skills Development</a></li>
-          <li><a href="pages/services.html">Scorecard Consulting</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div>
-        <p class="footer-heading">Contact Us</p>
-        <div class="footer-contact-list">
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 5.76 5.76l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <div>
-              <span class="footer-contact-label">Brandon</span>
-              <a href="tel:0697896975">069 789 6975</a>
+      <!-- Service 02: Corporate Training (Highlight) -->
+      <div id="service-corporate-training" class="learnership-highlight rounded-3xl p-10 md:p-16 mb-24">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="service-number-light mb-2">02</div>
+            <p class="text-xs font-medium tracking-[0.18em] uppercase mb-2" style="color:#4A90D9">Featured Service</p>
+            <h3 class="font-heading font-bold text-2xl md:text-3xl mb-4 text-white">Corporate Training</h3>
+            <p class="text-base leading-relaxed mb-6 font-light" style="color:rgba(255,255,255,0.72)">
+              We offer specialized training programs in customer care and retail. Our training modules are designed
+              to provide individuals with the necessary skills and knowledge to succeed in a competitive business
+              environment. We have been chosen by notable clients like Mr Price Foundation to train their employees,
+              showing that our programs are effective.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span class="text-sm font-medium text-white px-4 py-1.5 rounded-full"
+                    style="background:rgba(255,255,255,0.15)">Customer Care</span>
+              <span class="text-sm font-medium text-white px-4 py-1.5 rounded-full"
+                    style="background:rgba(255,255,255,0.15)">Retail Training</span>
+              <span class="text-sm font-medium text-white px-4 py-1.5 rounded-full"
+                    style="background:rgba(255,255,255,0.15)">Mr Price Foundation</span>
             </div>
           </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 5.76 5.76l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <div>
-              <span class="footer-contact-label">Neil</span>
-              <a href="tel:0836334547">083 633 4547</a>
+          <div>
+            <img
+              src="./images/CCC-BW-45.jpg"
+              alt="Learnership training session"
+              class="rounded-2xl w-full h-72 object-cover shadow-2xl"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="hidden rounded-2xl w-full h-72 items-center justify-center" style="background:rgba(255,255,255,0.08)">
+              <span class="text-5xl font-heading font-bold text-white opacity-[0.12] select-none">LT</span>
             </div>
           </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <a href="mailto:Brandon@c-c-c.co.za">Brandon@c-c-c.co.za</a>
+        </div>
+      </div>
+
+      <!-- Service 03: Learnership Training -->
+      <div id="service-learnership" class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 scroll-reveal">
+          <img
+            src="./images/CCC-BW-49.jpg"
+            alt="Learnership training programme"
+            class="rounded-2xl w-full h-72 object-cover shadow-xl"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hidden rounded-2xl w-full h-72 items-center justify-center"
+               style="background:linear-gradient(135deg,#1B3F9E 0%,#4A90D9 100%)">
+            <span class="text-5xl font-heading font-bold text-white opacity-[0.12] select-none">LT</span>
           </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <a href="mailto:Neil@c-c-c.co.za">Neil@c-c-c.co.za</a>
+        </div>
+        <div class="order-1 md:order-2 scroll-reveal" style="transition-delay:0.1s">
+          <div class="service-number mb-2">03</div>
+          <h3 class="font-heading font-bold text-2xl md:text-3xl mb-4" style="color:#1A2B5E">Learnership Training</h3>
+          <p class="text-base leading-relaxed mb-6 font-light" style="color:#6B7A9A">
+            As an approved training provider by SETA, we offer learnership programs that focus on skills development
+            and youth entrepreneurial development. Our learnership options cover a range of fields, including contact
+            centre operations, new venture creation (NVC), and administration. Red Alert and Toyota are among the
+            esteemed organisations that have chosen us to train their learners and foster entrepreneurial growth.
+          </p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 shrink-0" style="color:#4A90D9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-sm font-light" style="color:#6B7A9A">SETA-approved training provider</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 shrink-0" style="color:#4A90D9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-sm font-light" style="color:#6B7A9A">Contact centre operations, NVC &amp; administration</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 shrink-0" style="color:#4A90D9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="text-sm font-light" style="color:#6B7A9A">Youth entrepreneurial &amp; skills development</span>
+            </li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="partner-tag">Red Alert</span>
+            <span class="partner-tag">Toyota</span>
           </div>
         </div>
       </div>
 
     </div>
+  </section>
 
-    <hr class="footer-divider" />
 
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2026 Customer Care Centre. All rights reserved.</p>
-      <nav class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-      </nav>
+  <!-- ═══════════════════════════════════════════════════════
+       TEAM (#team)
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="team" class="py-24" style="background:#F0F6FF">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <p class="scroll-reveal text-xs font-medium tracking-[0.18em] uppercase mb-3" style="color:#4A90D9">The People Behind CCC</p>
+        <h2 class="scroll-reveal font-heading font-bold text-3xl md:text-4xl mb-4" style="color:#1A2B5E; transition-delay:0.08s">
+          Meet the Stewards
+        </h2>
+        <p class="scroll-reveal text-lg font-light max-w-xl mx-auto" style="color:#6B7A9A; transition-delay:0.16s">
+          Dedicated professionals committed to transforming lives through meaningful employment.
+        </p>
+      </div>
+
+      <!-- Leadership -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10 max-w-2xl mx-auto">
+
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-md group scroll-reveal">
+          <div class="relative h-64 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-white text-4xl font-heading font-bold select-none"
+                 style="background:linear-gradient(135deg,#1A2B5E,#4A90D9)">N</div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-heading font-semibold text-lg" style="color:#1A2B5E">Neil</h4>
+            <p class="text-sm font-medium mb-2" style="color:#4A90D9">Chief Executive Officer</p>
+            <p class="text-xs font-light leading-relaxed" style="color:#6B7A9A">
+              Visionary leader with over a decade of driving B-BBEE transformation and people-first business strategy across South Africa.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-md group scroll-reveal" style="transition-delay:0.1s">
+          <div class="relative h-64 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-white text-4xl font-heading font-bold select-none"
+                 style="background:linear-gradient(135deg,#1B3F9E,#4A90D9)">B</div>
+          </div>
+          <div class="p-5">
+            <h4 class="font-heading font-semibold text-lg" style="color:#1A2B5E">Brandon</h4>
+            <p class="text-sm font-medium mb-2" style="color:#4A90D9">Operations Director</p>
+            <p class="text-xs font-light leading-relaxed" style="color:#6B7A9A">
+              Operational excellence specialist ensuring programme delivery quality and stakeholder satisfaction at every touchpoint.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Operations Team -->
+      <div class="text-center mb-8">
+        <h3 class="font-heading font-semibold text-xl" style="color:#1A2B5E">Operations Team</h3>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-md group scroll-reveal">
+          <div class="relative h-48 overflow-hidden">
+            <img src="./images/team/fatima.jpg" alt="Fatima, Supervisor" class="team-photo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="hidden w-full h-full items-center justify-center text-white text-3xl font-heading font-bold select-none"
+                 style="background:linear-gradient(135deg,#1A2B5E,#4A90D9)">F</div>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-semibold text-base" style="color:#1A2B5E">Fatima</h4>
+            <p class="text-xs font-medium" style="color:#4A90D9">Floor Supervisor</p>
+          </div>
+        </div>
+
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-md group scroll-reveal" style="transition-delay:0.08s">
+          <div class="relative h-48 overflow-hidden">
+            <img src="./images/team/carvin.jpg" alt="Carvin, Supervisor" class="team-photo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="hidden w-full h-full items-center justify-center text-white text-3xl font-heading font-bold select-none"
+                 style="background:linear-gradient(135deg,#1B3F9E,#4A90D9)">C</div>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-semibold text-base" style="color:#1A2B5E">Carvin</h4>
+            <p class="text-xs font-medium" style="color:#4A90D9">Training &amp; Development Supervisor</p>
+          </div>
+        </div>
+
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-md group scroll-reveal" style="transition-delay:0.16s">
+          <div class="relative h-48 overflow-hidden">
+            <img src="./images/team/percy.jpg" alt="Percy, Supervisor" class="team-photo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="hidden w-full h-full items-center justify-center text-white text-3xl font-heading font-bold select-none"
+                 style="background:linear-gradient(135deg,#1A2B5E,#1B3F9E)">P</div>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-semibold text-base" style="color:#1A2B5E">Percy</h4>
+            <p class="text-xs font-medium" style="color:#4A90D9">Work from Home Floor Supervisor</p>
+          </div>
+        </div>
+
+        <div class="team-card bg-white rounded-2xl overflow-hidden shadow-md group scroll-reveal" style="transition-delay:0.24s">
+          <div class="relative h-48 overflow-hidden">
+            <img src="./images/team/jerome.jpg" alt="Jerome, Supervisor" class="team-photo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="hidden w-full h-full items-center justify-center text-white text-3xl font-heading font-bold select-none"
+                 style="background:linear-gradient(135deg,#1B3F9E,#1A2B5E)">J</div>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-semibold text-base" style="color:#1A2B5E">Jerome</h4>
+            <p class="text-xs font-medium" style="color:#4A90D9">Floor Supervisor</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       PARTNERS (#partners)
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="partners" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Header -->
+      <div class="text-center mb-14">
+        <p class="scroll-reveal text-xs font-medium tracking-[0.18em] uppercase mb-3" style="color:#4A90D9">Trusted By</p>
+        <h2 class="scroll-reveal font-heading font-bold text-3xl md:text-4xl" style="color:#1A2B5E; transition-delay:0.08s">
+          Partners Who Trust Our Services
+        </h2>
+      </div>
+
+      <!-- 4 Partner Logos -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-14">
+
+        <div class="partner-logo-card scroll-reveal flex items-center justify-center rounded-2xl p-8 min-h-[120px]">
+          <img
+            src="./images/partners/shell.png"
+            alt="Shell V+ partner logo"
+            class="max-h-12 max-w-full object-contain"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hidden flex-col items-center justify-center text-center w-full">
+            <div class="font-heading font-bold text-lg" style="color:#1A2B5E">Shell V+</div>
+            <div class="text-xs mt-1" style="color:#6B7A9A">Partner</div>
+          </div>
+        </div>
+
+        <div class="partner-logo-card scroll-reveal flex items-center justify-center rounded-2xl p-8 min-h-[120px]" style="transition-delay:0.08s">
+          <img
+            src="./images/partners/sasol.png"
+            alt="Sasol partner logo"
+            class="max-h-12 max-w-full object-contain"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hidden flex-col items-center justify-center text-center w-full">
+            <div class="font-heading font-bold text-lg" style="color:#1A2B5E">Sasol</div>
+            <div class="text-xs mt-1" style="color:#6B7A9A">Partner</div>
+          </div>
+        </div>
+
+        <div class="partner-logo-card scroll-reveal flex items-center justify-center rounded-2xl p-8 min-h-[120px]" style="transition-delay:0.16s">
+          <img
+            src="./images/partners/mrprice.png"
+            alt="Mr Price partner logo"
+            class="max-h-12 max-w-full object-contain"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hidden flex-col items-center justify-center text-center w-full">
+            <div class="font-heading font-bold text-lg" style="color:#1A2B5E">Mr Price</div>
+            <div class="text-xs mt-1" style="color:#6B7A9A">Partner</div>
+          </div>
+        </div>
+
+        <div class="partner-logo-card scroll-reveal flex items-center justify-center rounded-2xl p-8 min-h-[120px]" style="transition-delay:0.24s">
+          <img
+            src="./images/partners/mrprice-foundation.png"
+            alt="Mr Price Foundation partner logo"
+            class="max-h-12 max-w-full object-contain"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hidden flex-col items-center justify-center text-center w-full">
+            <div class="font-heading font-bold text-lg" style="color:#1A2B5E">Mr Price Foundation</div>
+            <div class="text-xs mt-1" style="color:#6B7A9A">Partner</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Full-width Testimonial Card -->
+      <div class="testimonial-card scroll-reveal rounded-3xl p-10 md:p-14 relative overflow-hidden">
+        <!-- Decorative quote mark -->
+        <div class="absolute top-8 left-10 text-[8rem] font-heading font-bold leading-none select-none pointer-events-none"
+             style="color:rgba(255,255,255,0.07)">&ldquo;</div>
+
+        <div class="relative grid md:grid-cols-[1fr_auto] gap-8 items-center">
+          <div>
+            <p class="text-white text-xl md:text-2xl font-light leading-relaxed mb-6 italic">
+              "CCC has been an invaluable partner in helping us meet our B-BBEE commitments. Their learnership
+              graduates arrive motivated, trained, and ready to contribute — not just to our scorecard, but to
+              our actual business performance. The impact on our teams has been remarkable."
+            </p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-heading font-bold text-lg shrink-0"
+                   style="background:rgba(255,255,255,0.2)">S</div>
+              <div>
+                <div class="font-heading font-semibold text-white text-base">Senior HR Manager</div>
+                <div class="text-sm" style="color:rgba(255,255,255,0.6)">Retail Corporate Partner · South Africa</div>
+              </div>
+            </div>
+          </div>
+          <!-- Star rating -->
+          <div class="flex flex-col items-center gap-2 shrink-0">
+            <div class="flex gap-1">
+              <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <span class="text-sm font-medium text-white">5.0 / 5.0</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       CONTACT (#contact)
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="contact" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <p class="scroll-reveal text-xs font-medium tracking-[0.18em] uppercase mb-3" style="color:#4A90D9">Get In Touch</p>
+        <h2 class="scroll-reveal font-heading font-bold text-3xl md:text-4xl mb-4" style="color:#1A2B5E; transition-delay:0.08s">
+          Let's Build Something Together
+        </h2>
+        <p class="scroll-reveal text-lg font-light max-w-xl mx-auto" style="color:#6B7A9A; transition-delay:0.16s">
+          Ready to partner with CCC? Let's discuss how we can help your organisation achieve its B-BBEE objectives.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-16 items-start max-w-5xl mx-auto w-full">
+
+        <!-- Form -->
+        <div class="scroll-reveal">
+          <div id="contact-form-wrapper">
+            <form id="contact-form" novalidate>
+              <div class="flex flex-col gap-5">
+
+                <div>
+                  <label class="block text-sm font-medium mb-1.5" style="color:#1A2B5E" for="contact-name">Full Name</label>
+                  <input type="text" id="contact-name" name="name" required
+                         placeholder="e.g. Thabo Nkosi" class="form-input" />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium mb-1.5" style="color:#1A2B5E" for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" name="email" required
+                         placeholder="e.g. thabo@company.co.za" class="form-input" />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium mb-1.5" style="color:#1A2B5E" for="contact-service">Service Interest</label>
+                  <select id="contact-service" name="service" class="form-input">
+                    <option value="">Select a service…</option>
+                    <option value="call-centres">Call Centres</option>
+                    <option value="learnership">Learnership Training</option>
+                    <option value="job-enhancement">Job Opportunity Enhancement</option>
+                    <option value="general">General Enquiry</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium mb-1.5" style="color:#1A2B5E" for="contact-message">Message</label>
+                  <textarea id="contact-message" name="message" rows="5" required
+                            placeholder="Tell us about your B-BBEE goals or how we can help…"
+                            class="form-input resize-none"></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn" class="cta-btn w-full py-3.5 text-base font-medium">
+                  Send Message &nbsp;→
+                </button>
+
+              </div>
+            </form>
+          </div>
+
+          <!-- Success State -->
+          <div id="form-success" class="hidden flex-col items-center justify-center text-center py-16">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center mb-5" style="background:#F0F6FF">
+              <svg class="w-8 h-8" style="color:#1B3F9E" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl mb-2" style="color:#1A2B5E">Message Sent!</h3>
+            <p class="text-sm font-light max-w-xs" style="color:#6B7A9A">
+              Thank you for reaching out. Our team will be in touch with you shortly.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="flex flex-col gap-5 scroll-reveal items-center text-center" style="transition-delay:0.1s">
+
+          <div class="contact-info-card justify-center w-full">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style="background:#1B3F9E">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-heading font-semibold text-base mb-1.5" style="color:#1A2B5E">Email Us</h4>
+              <a href="mailto:Brandon@c-c-c.co.za" class="block text-sm font-light transition-colors hover:text-[#1B3F9E]" style="color:#6B7A9A">Brandon@c-c-c.co.za</a>
+              <a href="mailto:Neil@c-c-c.co.za"    class="block text-sm font-light transition-colors hover:text-[#1B3F9E]" style="color:#6B7A9A">Neil@c-c-c.co.za</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card justify-center w-full">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style="background:#1B3F9E">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-heading font-semibold text-base mb-1.5" style="color:#1A2B5E">Call Us</h4>
+              <a href="tel:+27697896975" class="text-sm font-light transition-colors hover:text-[#1B3F9E]" style="color:#6B7A9A">069 789 6975</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card justify-center w-full">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style="background:#1B3F9E">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-heading font-semibold text-base mb-1.5" style="color:#1A2B5E">Service Area</h4>
+              <p class="text-sm font-light" style="color:#6B7A9A">Nationwide Service Delivery</p>
+              <p class="text-xs font-light mt-0.5" style="color:#6B7A9A">Serving clients across South Africa</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card justify-center w-full">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style="background:#1B3F9E">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-heading font-semibold text-base mb-1.5" style="color:#1A2B5E">Location</h4>
+              <p class="text-sm font-light" style="color:#6B7A9A">36 Newport Avenue</p>
+              <p class="text-sm font-light" style="color:#6B7A9A">Glen Ashley Views, Durban North</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════════ -->
+  <footer style="background:#000000">
+    <div class="max-w-7xl mx-auto px-6 py-14">
+      <div class="grid md:grid-cols-4 gap-10 mb-10">
+
+        <div>
+          <a href="#home" class="inline-block mb-4">
+            <img
+              src="./Assets/Customer-care-center-logo.png"
+              alt="Customer Care Centre"
+              class="h-[4.25rem] w-auto"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <span class="hidden items-center justify-center w-12 h-12 rounded-lg text-white text-sm font-bold"
+                  style="background:linear-gradient(135deg,#1A2B5E,#4A90D9)">CCC</span>
+          </a>
+          <p class="text-sm font-light leading-relaxed" style="color:rgba(255,255,255,0.5)">
+            Professional people connection in the customer care industry. Empowering South Africa, one career at a time.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="font-heading font-semibold text-xs text-white mb-5 uppercase tracking-widest">Quick Links</h5>
+          <ul class="space-y-2.5 list-none p-0">
+            <li><a href="#home"     class="footer-link">Home</a></li>
+            <li><a href="#about"    class="footer-link">About</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#team"     class="footer-link">Team</a></li>
+            <li><a href="#contact"  class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-heading font-semibold text-xs text-white mb-5 uppercase tracking-widest">Services</h5>
+          <ul class="space-y-2.5 list-none p-0">
+            <li><a href="#service-call-centre" class="footer-link">Call Centre</a></li>
+            <li><a href="#service-corporate-training" class="footer-link">Corporate Training</a></li>
+            <li><a href="#service-learnership" class="footer-link">Learnership Training</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-heading font-semibold text-xs text-white mb-5 uppercase tracking-widest">Contact</h5>
+          <ul class="space-y-2.5 list-none p-0">
+            <li><a href="mailto:Brandon@c-c-c.co.za" class="footer-link">Brandon@c-c-c.co.za</a></li>
+            <li><a href="mailto:Neil@c-c-c.co.za"    class="footer-link">Neil@c-c-c.co.za</a></li>
+            <li><a href="tel:+27697896975"            class="footer-link">069 789 6975</a></li>
+            <li><span class="text-sm font-light" style="color:rgba(255,255,255,0.5)">Nationwide, South Africa</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3 pt-8 border-t"
+           style="border-color:rgba(255,255,255,0.1)">
+        <p class="text-xs" style="color:rgba(255,255,255,0.35)">&copy; 2026 Customer Care Centre. All rights reserved.</p>
+        <p class="text-xs" style="color:rgba(255,255,255,0.35)">Developed by Rightside Media</p>
+      </div>
     </div>
   </footer>
 
-  <!-- ── NAVBAR JS ────────────────────────────────────────────── -->
-  <script>
-    (function () {
-      const navbar     = document.getElementById('navbar');
-      const hamburger  = document.getElementById('hamburger');
-      const mobileMenu = document.getElementById('mobile-menu');
-
-      window.addEventListener('scroll', () => {
-        navbar.classList.toggle('scrolled', window.scrollY > 20);
-      }, { passive: true });
-
-      hamburger.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.toggle('open');
-        hamburger.classList.toggle('open', isOpen);
-        hamburger.setAttribute('aria-expanded', isOpen);
-        document.body.style.overflow = isOpen ? 'hidden' : '';
-      });
-
-      mobileMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.remove('open');
-          hamburger.classList.remove('open');
-          hamburger.setAttribute('aria-expanded', 'false');
-          document.body.style.overflow = '';
-        });
-      });
-
-      document.addEventListener('click', (e) => {
-        if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
-          mobileMenu.classList.remove('open');
-          hamburger.classList.remove('open');
-          hamburger.setAttribute('aria-expanded', 'false');
-          document.body.style.overflow = '';
-        }
-      });
-
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
-          mobileMenu.classList.remove('open');
-          hamburger.classList.remove('open');
-          hamburger.setAttribute('aria-expanded', 'false');
-          document.body.style.overflow = '';
-          hamburger.focus();
-        }
-      });
-    })();
-  </script>
-
-  <!-- ── SCROLL ANIMATIONS ──────────────────────────────────── -->
-  <script>
-    (function () {
-      function observe(selector, opts, stagger) {
-        const els = document.querySelectorAll(selector);
-        if (!els.length) return;
-        const obs = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            const delay = stagger ? Array.from(els).indexOf(entry.target) * stagger : 0;
-            setTimeout(() => entry.target.classList.add('visible'), delay);
-            obs.unobserve(entry.target);
-          });
-        }, opts || { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-        els.forEach(el => obs.observe(el));
-      }
-
-      // Hero stat cards
-      observe('.stat-card', { threshold: 0.1 }, 150);
-      // What We Offer
-      observe('.wwo-eyebrow, .wwo-heading, .wwo-para', { threshold: 0.2 }, 150);
-      observe('.wwo-card', { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }, 180);
-      // Services deep dive
-      // Loyalty & Learnerships sections
-      observe('.loyalty-text, .loyalty-image', { threshold: 0.15 }, 0);
-      observe('.learn-image, .learn-text', { threshold: 0.15 }, 0);
-      // Quote
-      observe('.quote-content', { threshold: 0.3 }, 0);
-      // Why choose us
-      observe('.why-eyebrow, .why-title, .why-subtitle', { threshold: 0.2 }, 120);
-      observe('.why-card', { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }, 150);
-      // Stewards
-      observe('.stewards-left, .stewards-right', { threshold: 0.2 }, 0);
-      // Testimonials
-      observe('.testi-eyebrow, .testi-title', { threshold: 0.2 }, 150);
-      observe('.testi-card', { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }, 180);
-      // CTA
-      observe('.cta-eyebrow, .cta-title, .cta-subtitle, .cta-buttons', { threshold: 0.2 }, 120);
-    })();
-  </script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
-

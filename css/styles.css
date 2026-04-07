@@ -1,0 +1,441 @@
+/* ═══════════════════════════════════════════════════════════
+   CCC — Custom Style Overrides
+   Complements Tailwind CSS CDN
+════════════════════════════════════════════════════════════ */
+
+/* ── Root Variables ────────────────────────────────────── */
+:root {
+  --navy:        #1A2B5E;
+  --blue-action: #1B3F9E;
+  --blue-light:  #4A90D9;
+  --blue-soft:   #F0F6FF;
+  --muted:       #6B7A9A;
+  --white:       #FFFFFF;
+}
+
+/* ── Global ─────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ── Navbar ─────────────────────────────────────────────── */
+#navbar {
+  background: transparent;
+  color: var(--navy);
+}
+
+#navbar.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 1px 24px rgba(0, 0, 0, 0.3);
+}
+
+#navbar.scrolled .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#navbar.scrolled .nav-link:hover,
+#navbar.scrolled .nav-link.active {
+  color: var(--blue-light);
+}
+
+/* Glass utility per spec */
+.glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.nav-link {
+  color: var(--muted);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--blue-action);
+  border-radius: 2px;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--blue-action);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ── CTA Button ─────────────────────────────────────────── */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, var(--blue-action) 0%, var(--blue-light) 100%);
+  border-radius: 8px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(27, 63, 158, 0.35);
+}
+
+.cta-btn:active {
+  transform: translateY(0);
+}
+
+.cta-btn:disabled {
+  opacity: 0.65;
+  transform: none;
+  cursor: not-allowed;
+}
+
+/* ── Hamburger ──────────────────────────────────────────── */
+.ham-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--navy);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#hamburger.open .ham-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+#hamburger.open .ham-line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+#hamburger.open .ham-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ── Mobile Menu Overlay ─────────────────────────────────── */
+.mobile-overlay {
+  background: rgba(26, 43, 94, 0.97);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  color: var(--blue-light);
+}
+
+/* ── Hero ────────────────────────────────────────────────── */
+.hero-bg {
+  background: linear-gradient(160deg, #EEF4FF 0%, #F4F8FF 50%, #FFFFFF 100%);
+}
+
+.hero-bg-img {
+  background-image: url('../images/CCC-BW-45.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    160deg,
+    rgba(26, 43, 94, 0.82) 0%,
+    rgba(27, 63, 158, 0.72) 60%,
+    rgba(74, 144, 217, 0.60) 100%
+  );
+}
+
+.hero-pattern::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 15% 25%, rgba(27, 63, 158, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 85% 75%, rgba(74, 144, 217, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ── Stats Bar ──────────────────────────────────────────── */
+.stats-bar {
+  background: white;
+  border: 1px solid rgba(26, 43, 94, 0.07);
+  box-shadow: 0 4px 32px rgba(26, 43, 94, 0.06);
+}
+
+.stats-cell {
+  border-right: 1px solid rgba(26, 43, 94, 0.07);
+  transition: background 0.2s ease;
+}
+
+.stats-cell:last-child {
+  border-right: none;
+}
+
+.stats-cell:hover {
+  background: var(--blue-soft);
+}
+
+/* ── Section Animations ─────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.65s ease both;
+}
+
+/* Scroll-triggered variant */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── About ──────────────────────────────────────────────── */
+/* About audience blocks */
+.about-audience-block {
+  background: white;
+  border: 1px solid rgba(26, 43, 94, 0.07);
+  border-left: 3px solid var(--blue-light);
+}
+
+.ceo-quote {
+  border-left: 3px solid var(--blue-action);
+  background: var(--blue-soft);
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+}
+
+.pillar-card {
+  background: white;
+  border: 1px solid rgba(26, 43, 94, 0.06);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.pillar-card:hover {
+  box-shadow: 0 6px 24px rgba(26, 43, 94, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ── Services ───────────────────────────────────────────── */
+.service-number {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1;
+  color: #EEF4FF !important;
+  -webkit-text-stroke: 1px #DCE7F5;
+  user-select: none;
+}
+
+.learnership-highlight {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue-action) 55%, var(--blue-light) 100%);
+  position: relative;
+}
+
+.service-number-light {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.06) !important;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.12);
+  user-select: none;
+}
+
+.partner-tag {
+  background: var(--blue-soft);
+  color: var(--blue-action);
+  border: 1px solid rgba(27, 63, 158, 0.15);
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  padding: 0.35rem 1rem;
+  display: inline-block;
+}
+
+/* ── Team ────────────────────────────────────────────────── */
+.team-card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+}
+
+.team-card:hover {
+  box-shadow: 0 16px 48px rgba(26, 43, 94, 0.13);
+  transform: translateY(-4px);
+}
+
+.team-photo {
+  filter: grayscale(100%);
+  transition: filter 0.4s ease, transform 0.4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.team-card:hover .team-photo {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+/* ── Contact Form ───────────────────────────────────────── */
+.form-input {
+  background: #FAFBFF;
+  border: 1px solid #E2E8F0;
+  color: var(--navy);
+  border-radius: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: var(--blue-action);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(27, 63, 158, 0.1);
+}
+
+.form-input::placeholder {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+.contact-info-card {
+  background: var(--blue-soft);
+  border: 1px solid rgba(26, 43, 94, 0.06);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* ── CTA Banner (contact section) ───────────────────────── */
+.cta-banner {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue-action) 100%);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ── Values ─────────────────────────────────────────────── */
+.value-card {
+  background: var(--blue-soft);
+  border: 1px solid rgba(26, 43, 94, 0.06);
+  transition: box-shadow 0.25s ease, transform 0.25s ease, background 0.25s ease;
+}
+
+.value-card:hover {
+  background: white;
+  box-shadow: 0 8px 32px rgba(26, 43, 94, 0.1);
+  transform: translateY(-4px);
+}
+
+.value-card:hover .value-icon {
+  background: #1B3F9E !important;
+}
+
+.value-card:hover .value-icon svg {
+  color: white !important;
+}
+
+/* ── Partners ───────────────────────────────────────────── */
+.partner-logo-card {
+  background: var(--blue-soft);
+  border: 1px solid rgba(26, 43, 94, 0.07);
+  transition: box-shadow 0.25s ease, transform 0.25s ease, background 0.25s ease;
+}
+
+.partner-logo-card:hover {
+  background: white;
+  box-shadow: 0 8px 28px rgba(26, 43, 94, 0.1);
+  transform: translateY(-3px);
+}
+
+/* ── Testimonial Card ───────────────────────────────────── */
+.testimonial-card {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue-action) 55%, var(--blue-light) 100%);
+}
+
+/* ── Footer ─────────────────────────────────────────────── */
+.footer-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+/* ── Focus Styles (Accessibility) ───────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--blue-light);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Mobile Responsive Tweaks ───────────────────────────── */
+@media (max-width: 767px) {
+  .stats-cell {
+    border-bottom: 1px solid rgba(26, 43, 94, 0.07);
+    border-right: none;
+  }
+
+  .stats-cell:last-child {
+    border-bottom: none;
+  }
+
+  .service-number,
+  .service-number-light {
+    font-size: 3.5rem;
+  }
+}
