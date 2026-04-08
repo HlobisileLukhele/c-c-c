@@ -205,3 +205,22 @@
   observe('.scorecard-eyebrow, .scorecard-title, .scorecard-subtitle', { threshold: 0.2 }, 150);
   observe('.scorecard-card', { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }, 150);
   observe('.build-title, .build-subtitle, .build-btn', { threshold: 0.2 }, 150);
+
+//Table animation on model page
+   (function() {
+      // Intersection Observer for fade-in animations (heading + table)
+      const heading = document.getElementById('modelHeading');
+      const tableWrap = document.getElementById('tableWrap');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      
+      if (heading) observer.observe(heading);
+      if (tableWrap) observer.observe(tableWrap);
+    })();

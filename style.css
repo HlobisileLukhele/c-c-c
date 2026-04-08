@@ -3674,3 +3674,93 @@ img  { max-width: 100%; height: auto; }
   }
 }
 
+
+/* Bullet lists styling - pure CSS, no Tailwind */
+    .cell-list {
+      list-style: none;
+      margin-top: 8px;
+    }
+    .cell-list li {
+      position: relative;
+      padding-left: 16px;
+      margin-bottom: 4px;
+      font-size: 0.88rem;
+      line-height: 1.65;
+      color: #334155;
+    }
+    .cell-list li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: #1B3F9E;
+      font-weight: 700;
+    }
+    /* Fade-up animations (pure CSS) */
+    .model-heading-wrap {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .model-heading-wrap.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .table-wrap {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.9s ease 0.2s, transform 0.9s ease 0.2s;
+    }
+    .table-wrap.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Table row hover effect */
+    .model-table tbody tr {
+      transition: background 0.2s ease;
+    }
+    .model-table tbody tr:hover {
+      background: rgba(59, 130, 246, 0.03);
+    }
+    /* Footer border radius */
+    .table-footer-rounded {
+      border-radius: 0 0 16px 16px;
+    }
+    /* Italic & strong overrides */
+    .model-table td em {
+      font-style: italic;
+      color: #475569;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .model-table td strong {
+      font-weight: 700;
+      color: #0f1f5a;
+    }
+    /* Responsive padding */
+    @media (max-width: 900px) {
+      .model-section-pad {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+      }
+    }
+    @media (min-width: 901px) {
+      .model-section-pad {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+      }
+    }
+    /* Ensure table is responsive on smaller screens (horizontal scroll) */
+    @media (max-width: 860px) {
+      .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+    /* Remove any default card display - table only */
+    .mobile-cards {
+      display: none !important;
+    }
