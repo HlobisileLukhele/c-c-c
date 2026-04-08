@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navbar.scrolled .nav-link {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgb(255, 255, 255);
 }
 
 #navbar.scrolled .nav-link:hover,
@@ -57,10 +57,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-  color: var(--muted);
+  color: var(--white);
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size:1.175rem;
   position: relative;
   padding-bottom: 2px;
   transition: color 0.2s ease;
