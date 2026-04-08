@@ -1659,7 +1659,6 @@
     }
 
     .value-item:hover .value-icon {
-      background: rgba(59, 130, 246, 0.3) !important;
       transform: translateY(-4px) scale(1) !important;
       transition: background 0.25s ease, transform 0.25s ease !important;
     }
